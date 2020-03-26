@@ -1,3 +1,7 @@
+/* I made two changes to the stylesheet for accessibility reasons. 
+1.) the 'a' selector rules were moved to the '.nav a' rules because I added links in my 'experience.html' file and my anchor tags were not appearing as should be expected
+2.) added a media query at the bottom for 'prefers-reduced-motion' as some users prefer to not have animations on their websites because they find them to be distracting or disorienting */
+
 /* Global Layout Set-up */
 * {
   box-sizing: border-box;
@@ -17,6 +21,7 @@ body {
   text-decoration: none;
   color: #999;
 } */
+
 a:hover {
   color: #6633ff;
 }
@@ -201,5 +206,12 @@ a.social:hover {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+  }
+}
+
+/* rules for users who want to turn off animation */
+@media screen and (prefers-reduced-motion: reduce) {
+  header .profile-image:hover {
+    transform: scale(1.2) rotate(5deg);
   }
 }
