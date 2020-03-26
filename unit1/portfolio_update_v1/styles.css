@@ -13,10 +13,10 @@ body {
 }
 /* Link Styles */
 
-a {
+/* a {
   text-decoration: none;
   color: #999;
-}
+} */
 a:hover {
   color: #6633ff;
 }
@@ -50,6 +50,8 @@ a:hover {
 }
 .nav a {
   transition: all 0.5s;
+  text-decoration: none;
+  color: #999;
 }
 .nav a:hover {
   color: white;
