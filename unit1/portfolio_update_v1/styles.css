@@ -80,6 +80,21 @@ header .profile-image {
   border: 3px solid white;
   transition: all 0.5s;
 }
+
+.profile-image,
+.tag {
+  animation: fadein 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
