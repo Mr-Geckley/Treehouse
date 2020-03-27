@@ -98,18 +98,21 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
-.tag {
+
+.tag,
+.location {
   background-color: #efefef;
   color: black;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  border: 3px dashed black;
 }
-.location {
+/* .location {
   background-color: #222;
   color: yellow;
-}
+} */
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
