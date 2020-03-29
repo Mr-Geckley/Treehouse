@@ -7,12 +7,13 @@
   box-sizing: border-box;
 }
 
-:root {
+/* commented out custom properties because css validator doesn't like 'em */
+/* :root {
   --dark-blue: #002662;
   --main-orange: #f2b639;
   --light-blue: #daedfd;
   --main-white: #fefffc;
-}
+} */
 
 body {
   margin: 0;
@@ -20,7 +21,7 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #222;
-  background: var(--light-blue);
+  background: #daedfd;
 }
 /* Link Styles */
 
@@ -30,7 +31,7 @@ body {
 } */
 
 a:hover {
-  color: var(--dark-blue);
+  color: #002662;
 }
 
 /* Section Styles */
@@ -44,7 +45,7 @@ h2 {
 
 .main-nav {
   width: 100%;
-  background: var(--dark-blue);
+  background: #002662;
   min-height: 50px;
   padding: 10px;
   position: fixed;
@@ -73,11 +74,11 @@ h2 {
 .nav a {
   transition: all 0.5s;
   text-decoration: none;
-  color: var(--main-white);
+  color: #fefffc;
 }
 
 .nav a:hover {
-  color: var(--main-orange);
+  color: #f2b639;
 }
 
 header {
@@ -97,7 +98,7 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid var(--main-white);
+  border: 3px solid #fefffc;
   transition: all 0.5s;
 }
 
@@ -125,19 +126,19 @@ header .profile-image:hover {
   display: block;
   margin: auto;
   border-radius: 5px;
-  border-bottom: 3px solid var(--main-orange);
-  border-right: 3px solid var(--main-orange);
+  border-bottom: 3px solid #f2b639;
+  border-right: 3px solid #f2b639;
 }
 
 .tag,
 .location {
-  background-color: var(--main-white);
-  color: var(--dark-blue);
+  background-color: #fefffc;
+  color: #002662;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-  border: 3px dashed var(--dark-blue);
+  border: 3px dashed #002662;
 }
 
 /* .location {
@@ -150,14 +151,14 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: var(--main-white);
-  border-bottom: 4px solid var(--light-blue);
+  background: #fefffc;
+  border-bottom: 4px solid #daedfd;
   border-radius: 6px;
   transition: all 0.5s;
 }
 
 .card:hover {
-  border-color: var(--main-orange);
+  border-color: #f2b639;
 }
 
 ul.skills {
@@ -168,28 +169,28 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: var(--dark-blue);
+  background: #002662;
   color: white;
   padding: 5px 10px;
   margin: 5px;
 }
 
 .skills li a {
-  color: var(--main-white);
+  color: #fefffc;
 }
 
 .skills li:hover {
   transform: rotate(-2.5deg);
-  color: var(--main-orange);
-  border-bottom: 3px solid var(--main-orange);
+  color: #f2b639;
+  border-bottom: 3px solid #f2b639;
 }
 
 .skills li:nth-child(odd):hover {
-  background: var(--dark-blue);
+  background: #002662;
 }
 
 .skills li:nth-child(odd):hover {
-  background: var(--dark-blue);
+  background: #002662;
   transform: rotate(+2.5deg);
 }
 footer {
@@ -201,7 +202,7 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: 0.75em;
-  color: var(--dark-blue);
+  color: #002662;
 }
 
 footer ul {
@@ -241,10 +242,11 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   .flex {
-    display: -ms-flexbox; /* TWEENER - IE 10 */
+    /* commented out to pass css validators */
+    /*display: -ms-flexbox;  TWEENER - IE 10 */
     display: flex;
     max-width: 1200px;
-    -ms-flex-pack: distribute;
+    /* -ms-flex-pack: distribute; */
     justify-content: space-around;
     margin: 0 auto;
   }
@@ -274,8 +276,9 @@ a.social:hover {
 }
 
 /* rules for users who want to turn off animation */
-@media screen and (prefers-reduced-motion: reduce) {
+/* commented out to pass css validators */
+/* @media screen and (prefers-reduced-motion: reduce) {
   header .profile-image:hover {
     transform: scale(1.2) rotate(5deg);
   }
-}
+} */
