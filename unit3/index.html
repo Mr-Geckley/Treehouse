@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Matt G Rocks</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <!-- top header "THE CODE REVIEW" [h1] -->
+      <!-- sub "Get the latest news on how your code is doing right in your inbox"[span] -->
+
+      <!-- [key design element] a couple horizontal rules [key design element] -->
+    </header>
+    <!-- HEADER END -->
+
+    <main>
+      <!-- FORM BEGIN -->
+
+      <form action="index.html" method="post">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <!-- "Full Name" * [text] -->
+          <div class="input-wrapper">
+            <label for="full-name">
+              Full Name
+            </label>
+
+            <input
+              require
+              id="full-name"
+              placeholder="Required"
+              name="full-name"
+              type="text"
+            />
+          </div>
+          <!-- "Email Address" * [email] -->
+          <div class="input-wrapper">
+            <label for="email">
+              Email Address
+            </label>
+
+            <input
+              required
+              id="email"
+              placeholder="Required"
+              name="email"
+              type="email"
+            />
+          </div>
+          <!-- "Phone Number" [tel] -->
+          <div class="input-wrapper">
+            <label for="phone">
+              Phone Number
+            </label>
+
+            <input id="phone" name="phone" type="tel" />
+          </div>
+          <!-- "Street Address" [text] -->
+          <div class="input-wrapper">
+            <label for="street-addy">
+              Street Address
+            </label>
+
+            <input id="street-addy" name="street-addy" type="text" />
+          </div>
+          <!-- "City" [text] -->
+          <div class="input-wrapper">
+            <label for="city">
+              City
+            </label>
+
+            <input id="city" name="city" type="text" />
+          </div>
+          <!-- "State" (Choose State) [selector] -->
+          <div class="input-wrapper">
+            <label for="state">
+              State
+            </label>
+
+            <select id="state" name="state">
+              <option value="alabama">AL</option>
+
+              <option value="alaska">AK</option>
+
+              <option value="arizona">AZ</option>
+
+              <option value="arkansas">AR</option>
+
+              <option value="california">CA</option>
+
+              <option value="colorado">CO</option>
+
+              <option value="connecticut">CT</option>
+
+              <option value="delaware">DE</option>
+
+              <option value="florida">FL</option>
+
+              <option value="georgia">GA</option>
+
+              <option value="hawaii">HI</option>
+
+              <option value="idaho">ID</option>
+
+              <option value="illinois">IL</option>
+
+              <option value="indiana">IN</option>
+
+              <option value="iowa">IA</option>
+
+              <option value="kansas">KS</option>
+
+              <option value="kentucky">KY</option>
+
+              <option value="louisiana">LA</option>
+
+              <option value="maine">ME</option>
+
+              <option value="maryland">MD</option>
+
+              <option value="massachusetts">MA</option>
+
+              <option value="michigan">MI</option>
+
+              <option value="minnesota">MN</option>
+
+              <option value="mississippi">MS</option>
+
+              <option value="missouri">MO</option>
+
+              <option value="montana">MT</option>
+
+              <option value="nebraska">NE</option>
+
+              <option value="nevada">NV</option>
+
+              <option value="newhampshire">NH</option>
+
+              <option value="newjersey">NJ</option>
+
+              <option value="newmexico">NM</option>
+
+              <option value="newyork">NY</option>
+
+              <option value="northcarolina">NC</option>
+
+              <option value="northdakota">ND</option>
+
+              <option value="ohio">OH</option>
+
+              <option value="oklahoma">OK</option>
+
+              <option value="oregon">OR</option>
+
+              <option value="pennsylvania">PA</option>
+
+              <option value="rhodeisland">RI</option>
+
+              <option value="southcarolina">SC</option>
+
+              <option value="southdakota">SD</option>
+
+              <option value="tennessee">TN</option>
+
+              <option value="texas">TX</option>
+
+              <option value="utah">UT</option>
+
+              <option value="vermont">VT</option>
+
+              <option value="virginia">VA</option>
+
+              <option value="washington">WA</option>
+
+              <option value="westvirginia">WV</option>
+
+              <option value="wisconsin">WI</option>
+
+              <option value="wyoming">WY</option>
+            </select>
+          </div>
+          <!-- "Zip Code" [number] -->
+          <div class="input-wrapper">
+            <label for="zip-code">
+              Zip Code
+            </label>
+
+            <input id="zip-code" name="zip-code" type="text" />
+          </div>
+        </fieldset>
+        <!-- contact info end -->
+
+        <!-- horizontal rule [key design element] -->
+        <fieldset>
+          <legend>Newsletter</legend>
+
+          <!-- "Select the newsletters you would like to recieve" [checkbox]
+- HTML News 
+- CSS News 
+- JavaScript News -->
+          <label>Select the newsletters you would like to recieve</label>
+          <div class="input-wrapper">
+            <input
+              type="checkbox"
+              id="html_news"
+              value="HTML News"
+              name="news_letter"
+            /><label for="html_news">HTML News</label>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="checkbox"
+              id="CSS News"
+              value="CSS News"
+              name="news_letter"
+            /><label for="CSS News">CSS News</label>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="checkbox"
+              id="javascript_news"
+              value="JavaScript News"
+              name="news_letter"
+            /><label for="javascript_news">JavaScript News</label>
+          </div>
+          <!-- "Newsletter format" [radio]
+- HTML 
+- Plain Text  -->
+
+          <!-- "Other topics you'd like to hear about"
+[text area] -->
+        </fieldset>
+        <!-- newsletter end -->
+
+        <!-- ["Sign Up" button] -->
+      </form>
+      <!-- FORM END -->
+    </main>
+    <!-- FOOTER START -->
+    <footer>
+      <!-- [copyright statement] -->
+    </footer>
+    <!-- FOOTER END -->
+  </body>
+</html>
