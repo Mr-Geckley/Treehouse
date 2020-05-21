@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Matt G Rocks</title>
+    <title>Geckodes</title>
     <!-- style sheet -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
@@ -16,8 +16,9 @@
     <!-- HEADER START -->
     <header>
       <!-- top header "THE CODE REVIEW" [h1] -->
+      <h1>THE CODE REVIEW</h1>
       <!-- sub "Get the latest news on how your code is doing right in your inbox"[span] -->
-
+      <span>Get the latest news on how your code is doing right in your inbox</span>
       <!-- [key design element] a couple horizontal rules [key design element] -->
     </header>
     <!-- HEADER END -->
@@ -236,19 +237,38 @@
           <!-- "Newsletter format" [radio]
 - HTML 
 - Plain Text  -->
+<label>Newsletter format</label>
+    <div class="input-wrapper">
+      <input type="radio" id="html" name="newsletter_format" value="html">
+    <label for="html">HTML</label>
+    </div>
+    <div class="input-wrapper">
+      <input type="radio" id="plain-text" name="newsletter_format" value="plain-text">
+    <label for="plain-text">Plain Text</label>
+    </div>
+    
 
           <!-- "Other topics you'd like to hear about"
 [text area] -->
+<div class="input-wrapper">
+  <label for="suggestion">Other topics you'd like to hear about</label>
+    
+  <textarea id="suggestion" name="suggestion" cols="30" rows="5"></textarea>
+</div>
         </fieldset>
         <!-- newsletter end -->
 
         <!-- ["Sign Up" button] -->
+        <div class="input-wrapper">
+          <button type="submit">Sign Up</submit>
+        </div>
       </form>
       <!-- FORM END -->
     </main>
     <!-- FOOTER START -->
     <footer>
       <!-- [copyright statement] -->
+      <p>&copy Geckodes</p>
     </footer>
     <!-- FOOTER END -->
   </body>
