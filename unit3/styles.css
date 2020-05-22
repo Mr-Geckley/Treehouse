@@ -6,10 +6,65 @@
 /* (1) Base rules. 
 These are styles of the main website elements – body, input, button, ul, ol, etc. 
 In this section, we use mainly HTML tags and attribute selectors, in exceptional cases – classes (for example, if you have JavaScript-style selections); */
+/* .
+|-------------|
+| FONT STYLEE |
+|-------------|
+Raleway is our header font 
+Opens Sans our body font 
+|-------------|
+| FONT FAMLEE |
+|-------------|
+font-family: "Open Sans", sans-serif;
+font-family: "Raleway", sans-serif;
+. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2,
+legend {
+  font-size: 1.25rem;
+  margin-top: 1.75rem;
+}
+h1,
+.form-header {
+  text-align: center;
+}
+h1,
+h2,
+legend {
+  font-family: "Raleway", sans-serif;
+}
+legend {
+  font-weight: 600;
+}
+main,
+footer {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+fieldset {
+  border: none;
+}
+
 textarea {
   display: block;
 }
-
 /* =======================================
 ~ ~ ~ ~ ~ ~ ~ L A Y O U T ~ ~ ~ ~ ~ ~ ~ 
 ======================================= */
@@ -17,6 +72,41 @@ textarea {
 Here are the styles of global elements, the size of the cap, footer, sidebar, etc.
 Jonathan suggests using id here in selectors since these elements will not occur more than 1 time on the page. 
 However, the author of the article considers this a bad practice (whenever an id appears in the styles, somewhere in the world the kitten is sad). */
+header,
+.form-header {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  justify-content: center;
+  align-items: center;
+}
+.form-header {
+  justify-content: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid orchid;
+}
+header:first-child {
+  height: 10vh;
+  background-color: coral;
+}
+.form-header {
+  background-color: blue;
+}
+
+span {
+  margin-top: 0.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 5px solid orchid;
+}
+fieldset:nth-of-type(1) label {
+  background-color: lightseagreen;
+  display: block;
+}
+fieldset:nth-of-type(1) input {
+  width: 100%;
+}
 
 /* =======================================
 ~ ~ ~ ~ ~ ~ ~ M O D U L E ~ ~ ~ ~ ~ ~ ~ 
@@ -24,6 +114,9 @@ However, the author of the article considers this a bad practice (whenever an id
 /* (3) Modules rules. 
 Blocks that can be used multiple times on a single page. 
 For module classes, it is not recommended to use id and tag selectors (for reuse and context independence, respectively). */
+.input-wrapper {
+  margin-top: 1.5rem;
+}
 
 /* =======================================
 ~ ~ ~ ~ ~ ~ ~ S T A T E ~ ~ ~ ~ ~ ~ ~ ~
