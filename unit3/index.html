@@ -214,14 +214,15 @@
 - HTML News 
 - CSS News 
 - JavaScript News -->
-          <label>Select the newsletters you would like to recieve</label>
+          <div class="opt-wrapper">
+            <label>Select the newsletters you would like to recieve</label>
           <div class="input-wrapper">
             <input
               type="checkbox"
               id="html_news"
               value="HTML News"
               name="news_letter"
-            /><label for="html_news">HTML News</label>
+            /><label class="check" for="html_news">HTML News</label>
           </div>
           <div class="input-wrapper">
             <input
@@ -229,7 +230,7 @@
               id="CSS News"
               value="CSS News"
               name="news_letter"
-            /><label for="CSS News">CSS News</label>
+            /><label class="check" for="CSS News">CSS News</label>
           </div>
           <div class="input-wrapper">
             <input
@@ -237,20 +238,23 @@
               id="javascript_news"
               value="JavaScript News"
               name="news_letter"
-            /><label for="javascript_news">JavaScript News</label>
+            /><label class="check" for="javascript_news">JavaScript News</label>
+          </div>
           </div>
           <!-- "Newsletter format" [radio]
 - HTML 
 - Plain Text  -->
-<label>Newsletter format</label>
+<div class="opt-wrapper">
+  <label>Newsletter format</label>
     <div class="input-wrapper">
       <input type="radio" id="html" name="newsletter_format" value="html">
-    <label for="html">HTML</label>
+    <label class="radio" for="html">HTML</label>
     </div>
     <div class="input-wrapper">
       <input type="radio" id="plain-text" name="newsletter_format" value="plain-text">
-    <label for="plain-text">Plain Text</label>
+    <label class="radio" for="plain-text">Plain Text</label>
     </div>
+</div>
     
 
           <!-- "Other topics you'd like to hear about"
@@ -258,7 +262,7 @@
 <div class="input-wrapper">
   <label for="suggestion">Other topics you'd like to hear about</label>
     
-  <textarea id="suggestion" name="suggestion" cols="30" rows="5"></textarea>
+  <textarea id="suggestion" name="suggestion"></textarea>
 </div>
         </fieldset>
         <!-- newsletter end -->
