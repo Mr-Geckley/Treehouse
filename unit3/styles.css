@@ -169,7 +169,15 @@ select {
   background-color: rgb(207, 207, 207);
   margin-top: 0.5rem;
 }
-
+input::placeholder,
+select {
+  text-align: right;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding-right: 1em;
+}
 /* =======================================
 ~ ~ ~ ~ ~ ~ ~ S T A T E ~ ~ ~ ~ ~ ~ ~ ~
 ======================================= */
