@@ -20,6 +20,7 @@ FireFox, Chrome, Safari, etc...
 
 - [Visual Studio Code](https://code.visualstudio.com/) - Editor
 - [Git CLI](https://git-scm.com/) - Version control software interface
+- [SMACSS](http://smacss.com/book/) - Method used to organize stylesheet
 
 ## Authors
 
